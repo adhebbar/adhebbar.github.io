@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="{{ "/assets/css/mains.css" | prepend: site.baseurl }}">
+</head>  <body>
+
+      <div id="particles-js">
+        <div class="header">
+            <h1>
+              <span class="site-title">Aditi Hebbar</span>
+              <span class="site-description">Software Developer</span>
+              <span class="site-description">Hardware Enthusiast</span>
+            </h1>
+            <div class="header-icons">
+              <a aria-label="Send email" href="mailto:ahebbar@andrew.cmu.edu"><i class="icon fa fa-envelope "></i></a>
+              <a aria-label="My Github" target="_blank" href="https://github.com/adhebbar"><i class="icon fa fa-fw fa-github" aria-hidden="true"></i></a>
+            </div>
+
+      <div class="header-links">
+      {% assign sorted_pages = site.pages | sort:"order" %}
+      {% for node in sorted_pages %}
+        {% if node.title %}
+          <a class="link" href="{{ node.url | relative_url }}" {% if page.url == node.url %} class="active" {% endif %} >{{ node.title | escape }}</a>
+        {% endif %}
+      {% endfor %}
+      </div> 
+
+        </div> <!-- took out down scolly thing -->
+      <!--   <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+       --></div> <!-- took out about section --> 
+<!--       <section id="about">
+      </section> -->
+
+        {{ content }}
+      <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script src="{{ "/assets/js/sweet-scroll.min.js" | prepend: site.baseurl }}"></script>
+      <script src="{{ "/assets/js/mains.js" | prepend: site.baseurl }}"></script>
+      </body>
