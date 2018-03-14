@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  "ASCII Maze gallery"
+title:  "ASCII Maze gallery (December 2016) "
 tags: Python random-maze-generator ascii-art panda3D
 sidebar: true
 text: true
 description: Award winning term project for Fundamentals of Programming and Computer Science course
-download: 3d-initials-logo.zip
 image: /assets/images/projects/asciiMaze.jpg
 ---
 Term project for Fundamentals of Programming and Computer Science course, taken in fall 2016.  
@@ -14,6 +13,6 @@ Term project for Fundamentals of Programming and Computer Science course, taken 
 - I used the python module PIL (python imaging library) to convert a given picture into a picture made of ascii characters, and also insert clues about solving the maze.   
 
 I was one of 15 selected as a finalist to present in front of peers and staff. (15 projects out of around 450 were selected)  
-A full demo of the project can be found at: https://www.youtube.com/watch?v=Mev4uImyWe8
+[VIEW DEMO](https://www.youtube.com/watch?v=Mev4uImyWe8)
 
 
