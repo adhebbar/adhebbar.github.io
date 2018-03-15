@@ -7,7 +7,7 @@ text: true
 description: An temple-run like game  on the occulus rift, with integrated harware 
 image: /assets/images/projects/vrishard.jpg
 ---
-This project is currently funded by [roboClub](https://roboticsclub.org/) and part of the [ CMU game creation society](http://www.gamecreation.org/). I function as co-team lead for this interdiplinary projec involving a team of artists, programmers and engineers.
+This project is currently funded by [roboClub](https://roboticsclub.org/) and part of the [ CMU game creation society](http://www.gamecreation.org/). I function as co-team lead for this interdiplinary project involving a team of artists, programmers and engineers.
 
 We want to create a game in virtual reality with a hardware aspect. In the game, the user will
 take on the role of a princess riding on a hover board in a steampunk styled world. The hover
